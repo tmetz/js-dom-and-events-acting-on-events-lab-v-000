@@ -15,8 +15,9 @@ function resetInput(){
 }
 
 function addNewLiOnClick() {
-  document.querySelector('form').addEventListener('submit', function(event){
-    event.addNewElementAsLi();
+  let submit = document.querySelector('input[type="submit"]');
+  submit.addEventListener('click', function(event){
+    addNewElementAsLi();
     resetInput();
   })
 }
