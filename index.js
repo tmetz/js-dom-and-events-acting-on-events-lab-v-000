@@ -22,6 +22,14 @@ function addNewLiOnClick() {
   })
 }
 
+function clearEmployeeListOnLinkClick() {
+  let clearLink = document.querySelector('a');
+  clearLink.addEventListener('click', function(event) {
+    let ordered = document.querySelector('ul');
+    ordered.innerHTML = '';
+  })
+}
+
 function preventRefreshOnSubmit(){
     document.querySelector('form').addEventListener('submit', function(event){
       event.preventDefault()
