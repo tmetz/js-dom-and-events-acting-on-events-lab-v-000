@@ -7,7 +7,7 @@ function retrieveEmployeeInformation() {
 function addNewElementAsLi() {
   let list = document.querySelector('.employee-list');
   let name = retrieveEmployeeInformation();
-  list.insertAdjacentHTML('beforeend', '<li> ${name} </li>');
+  list.insertAdjacentHTML('beforeend', `<li> ${name} </li>`);
 }
 
 function preventRefreshOnSubmit(){
